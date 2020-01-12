@@ -24,7 +24,6 @@
 <p align="center">
   <a href="#">
     <img src="https://forthebadge.com/images/badges/made-with-c-sharp.svg">
-    <img src="https://forthebadge.com/images/badges/powered-by-electricity.svg">
     <img src="https://forthebadge.com/images/badges/ages-12.svg">
     <img src="https://forthebadge.com/images/badges/oooo-kill-em.svg">
     <img src="https://forthebadge.com/images/badges/powered-by-oxygen.svg">
