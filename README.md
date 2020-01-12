@@ -32,6 +32,9 @@
 </p>
 
 
+#### Attention
+`Maybe conflict with AspCore.Mvc.Components.*`
+
 ### Default Usage
 
 ```csharp
