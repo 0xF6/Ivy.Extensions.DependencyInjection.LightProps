@@ -9,10 +9,10 @@
     <Company />
     <Copyright>Yuuki Wesp and Microsoft (C) 2020</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/0xF6/Microsoft.Extensions.DependencyInjection.LightProps</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/0xF6/Ivy.Extensions.DependencyInjection.LightProps</PackageProjectUrl>
     <PackageIcon>icon.png</PackageIcon>
     <PackageIconUrl />
-    <RepositoryUrl>https://github.com/0xF6/Microsoft.Extensions.DependencyInjection.LightProps</RepositoryUrl>
+    <RepositoryUrl>https://github.com/0xF6/Ivy.Extensions.DependencyInjection.LightProps.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>di, dependency injection property, dependency injection fields, extensions</PackageTags>
     <StartupObject />
