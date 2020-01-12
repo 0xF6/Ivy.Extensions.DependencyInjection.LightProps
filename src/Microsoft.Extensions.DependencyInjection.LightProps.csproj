@@ -3,10 +3,29 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>3.0.0</Version>
+    <Authors>Yuuki Wesp and Microsoft</Authors>
+    <Company />
+    <Copyright>Yuuki Wesp and Microsoft (C) 2020</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/0xF6/Microsoft.Extensions.DependencyInjection.LightProps</PackageProjectUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageIconUrl />
+    <RepositoryUrl>https://github.com/0xF6/Microsoft.Extensions.DependencyInjection.LightProps</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>di, dependency injection property, dependency injection fields, extensions</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
