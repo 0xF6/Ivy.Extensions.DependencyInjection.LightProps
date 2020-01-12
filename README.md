@@ -1,5 +1,3 @@
-# Microsoft.Extensions.DependencyInjection.LightProps
-
 <!-- Logo -->
 <p align="center">
   <a href="#">
