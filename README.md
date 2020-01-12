@@ -17,9 +17,6 @@
   <a href="https://www.nuget.org/packages/Ivy.Extensions.DependencyInjection.LightProps/">
     <img alt="Nuget" src="https://img.shields.io/nuget/v/Ivy.Extensions.DependencyInjection.LightProps.svg?color=%23884499">
   </a>
-  <a href="https://github.com/0xF6/Ivy.Extensions.DependencyInjection.LightProps/workflows/">
-    <img alt="Nuget" src="https://github.com/0xF6/Ivy.Extensions.DependencyInjection.LightProps/workflows/Build/badge.svg">
-  </a>
   <a href="https://t.me/ivysola">
     <img alt="Telegram" src="https://img.shields.io/badge/Ask%20Me-Anything-1f425f.svg">
   </a>
