@@ -1,6 +1,7 @@
 ﻿namespace Microsoft.Extensions.DependencyInjection
 {
     using System;
+    using System.Collections.Generic;
     using System.Linq;
     using System.Reflection;
 
@@ -15,10 +16,13 @@
             var type = obj.GetType();
             var injectableProperties =
                 MemberAssignmentStatic.GetPropertiesIncludingInherited(obj.GetType(), _injectablePropertyBindingFlags);
+            var filteredProps = new HashSet<PropertyInfo>();
+            var propertyInfos = injectableProperties as PropertyInfo[] ?? injectableProperties.ToArray();
 
-            injectableProperties = injectableProperties.Where(LightPropResolver.Resolver);
+            foreach (var info in LightPropResolver.resolverContainer.SelectMany(func => propertyInfos.Where(func)))
+                filteredProps.Add(info);
 
-            var tableOfInjectionData = injectableProperties.Select(property =>
+            var tableOfInjectionData = filteredProps.Select(property =>
             (
                 propertyName: property.Name,
                 propertyType: property.PropertyType,
