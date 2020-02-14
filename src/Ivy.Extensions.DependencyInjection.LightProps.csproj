@@ -5,7 +5,7 @@
     <OutputType>Library</OutputType>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>3.0.0.8</Version>
+    <Version>3.0.0.9</Version>
     <Authors>Yuuki Wesp and Microsoft</Authors>
     <Company />
     <Copyright>Yuuki Wesp and Microsoft (C) 2020</Copyright>
