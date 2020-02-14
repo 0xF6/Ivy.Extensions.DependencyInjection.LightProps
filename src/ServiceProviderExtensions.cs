@@ -4,7 +4,7 @@
     using System.Linq;
     using System.Reflection;
 
-    public static class IServiceProviderExtensions
+    public static class ServiceProviderExtensions
     {
         public static void InjectFor<T>(this IServiceProvider provider, T obj)
             => InjectFor(provider, (object)obj);
@@ -16,7 +16,7 @@
             var injectableProperties =
                 MemberAssignmentStatic.GetPropertiesIncludingInherited(obj.GetType(), _injectablePropertyBindingFlags);
 
-            injectableProperties = injectableProperties.Where(p => p.IsDefined(typeof(InjectAttribute)));
+            injectableProperties = injectableProperties.Where(LightPropResolver.Resolver);
 
             var tableOfInjectionData = injectableProperties.Select(property =>
             (
