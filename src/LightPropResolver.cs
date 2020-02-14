@@ -11,7 +11,7 @@
         static LightPropResolver() 
             => resolverContainer.Add(x => x.IsDefined(typeof(InjectAttribute)));
 
-        public static void AddCustomFilterAttribute<T>(Func<PropertyInfo, bool> functor)
+        public static void AddCustomFilterAttribute(Func<PropertyInfo, bool> functor)
             => resolverContainer.Add(functor);
     }
 }
