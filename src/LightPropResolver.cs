@@ -3,7 +3,8 @@
     using System;
     using System.Collections.Generic;
     using System.Reflection;
-    // for funcking aspcore components injector
+    using AspNetCore.Components;
+
     public static class LightPropResolver
     {
         internal static readonly List<Func<PropertyInfo, bool>> resolverContainer 
