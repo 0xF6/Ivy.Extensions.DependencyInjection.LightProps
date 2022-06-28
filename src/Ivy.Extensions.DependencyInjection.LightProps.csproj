@@ -2,9 +2,9 @@
 
 	<PropertyGroup>
 		<OutputType>Library</OutputType>
-		<TargetFrameworks>net5.0;net6.0;netcoreapp3.1</TargetFrameworks>
+		<TargetFrameworks>net5.0;net6.0</TargetFrameworks>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<Version>3.3.0</Version>
+		<Version>3.3.1</Version>
 		<Authors>Yuuki Wesp and Microsoft</Authors>
 		<Company />
 		<Copyright>Yuuki Wesp and Microsoft (C) 2020-2022</Copyright>
@@ -25,11 +25,6 @@
 	<ItemGroup Condition="'$(TargetFramework)' == 'net6.0'">
 		<PackageReference Include="Microsoft.AspNetCore.Components" Version="6.0.6" />
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
-	</ItemGroup>
-
-	<ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp3.1'">
-		<PackageReference Include="Microsoft.AspNetCore.Components" Version="3.1.26" />
-		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.26" />
 	</ItemGroup>
 
 	<ItemGroup>
