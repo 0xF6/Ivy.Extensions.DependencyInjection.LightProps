@@ -8,7 +8,7 @@
     public static class LightPropResolver
     {
         internal static readonly List<Func<PropertyInfo, bool>> resolverContainer 
-            = new ();
+            = new List<Func<PropertyInfo, bool>>();
         static LightPropResolver() 
             => resolverContainer.Add(x => x.IsDefined(typeof(InjectAttribute)));
 

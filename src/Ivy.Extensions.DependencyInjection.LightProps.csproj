@@ -1,33 +1,41 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>Library</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>3.2.0</Version>
-    <Authors>Yuuki Wesp and Microsoft</Authors>
-    <Company />
-    <Copyright>Yuuki Wesp and Microsoft (C) 2020</Copyright>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/0xF6/Ivy.Extensions.DependencyInjection.LightProps</PackageProjectUrl>
-    <PackageIcon>icon.png</PackageIcon>
-    <PackageIconUrl />
-    <RepositoryUrl>https://github.com/0xF6/Ivy.Extensions.DependencyInjection.LightProps.git</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
-    <PackageTags>di, dependency injection property, dependency injection fields, extensions</PackageTags>
-    <StartupObject />
-    <ApplicationIcon />
-  </PropertyGroup>
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<TargetFrameworks>net5.0;net6.0;netcoreapp3.1</TargetFrameworks>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Version>3.3.0</Version>
+		<Authors>Yuuki Wesp and Microsoft</Authors>
+		<Company />
+		<Copyright>Yuuki Wesp and Microsoft (C) 2020-2022</Copyright>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/0xF6/Ivy.Extensions.DependencyInjection.LightProps</PackageProjectUrl>
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageIconUrl />
+		<RepositoryUrl>https://github.com/0xF6/Ivy.Extensions.DependencyInjection.LightProps.git</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>di, dependency injection property, dependency injection fields, extensions</PackageTags>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components" Version="5.0.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
-  </ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'net5.0'">
+		<PackageReference Include="Microsoft.AspNetCore.Components" Version="5.0.17" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <None Include="..\icon.png">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
-  </ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'net6.0'">
+		<PackageReference Include="Microsoft.AspNetCore.Components" Version="6.0.6" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp3.1'">
+		<PackageReference Include="Microsoft.AspNetCore.Components" Version="3.1.26" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.26" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\icon.png">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
 </Project>
